@@ -62,9 +62,9 @@ class Circle(QMainWindow):
             self.draw_c = False
 
     def draw_circle(self, qp):
-        qp.setBrush(QColor(*[random.randint(0, 255) for _ in range(3)]))
+        qp.setBrush(QColor(254, 254, 34))
         x = random.randint(25, self.width() - 75)
-        y = random.randint(0, 500)
+        y = random.randint(10, 500)
         r = random.randint(10, 300)
         qp.drawEllipse(x, y, r, r)
 
