@@ -62,7 +62,7 @@ class Circle(QMainWindow):
             self.draw_c = False
 
     def draw_circle(self, qp):
-        qp.setBrush(QColor(254, 254, 34))
+        qp.setBrush(QColor(*[random.randint(0, 255) for _ in range(3)]))
         x = random.randint(25, self.width() - 75)
         y = random.randint(0, 500)
         r = random.randint(10, 300)
